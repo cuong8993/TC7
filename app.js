@@ -8,13 +8,13 @@ de:{
 "system.s1":"Was soll sofort klar sein?","system.s2":"Wohin soll der Besucher?","system.s3":"Was schafft Vertrauen?","system.s4":"Was ist der nächste Schritt?",
 "system.structure.title":"Klarheit vor Effekten.","system.structure.body":"Navigation, Inhalte und Handlungswege werden zuerst sauber aufgebaut. Animation kommt danach und unterstützt die Nutzung.",
 "system.interface.body":"Typografie, Kontrast, Rhythmus und Bewegung bekommen eine klare Aufgabe. So wirkt die Seite hochwertig und bleibt einfach zu bedienen.","system.interface.layout":"Das Layout wird für kleine und große Displays gemeinsam entwickelt.","system.interface.motion":"Bewegung führt den Blick und gibt Feedback, ohne den Inhalt zu überdecken.",
-"perf.1.title":"Semantisch","perf.1.body":"Klare Struktur und echte Bedienelemente.","perf.2.title":"Responsive","perf.2.body":"Fluide Layouts statt starrer Desktop Lösungen.","perf.3.title":"Gezielt","perf.3.body":"Interaktion nur dort, wo sie einen echten Nutzen hat.","perf.4.title":"Mitgedacht","perf.4.body":"Fokuszustände, Reduced Motion und Tastaturbedienung.",
+"perf.1.title":"Semantisch","perf.1.body":"Klare Struktur und echte Bedienelemente.","perf.2.title":"Responsive","perf.2.body":"Fluide Layouts statt starrer Desktop-Lösungen.","perf.3.title":"Gezielt","perf.3.body":"Interaktion nur dort, wo sie einen echten Nutzen hat.","perf.4.title":"Mitgedacht","perf.4.body":"Fokuszustände, Reduced Motion und Tastaturbedienung.",
 "search.title":"Gefunden werden beginnt im Aufbau.","search.body":"Metadaten, strukturierte Inhalte, lokale Signale und Performance bilden die technische Grundlage für Sichtbarkeit.",
-"work.label":"Ausgewählte Arbeiten","work.heading":"Websites und Interfaces, die unterschiedliche Aufgaben lösen.","work.intro":"Kundenprojekt und eigenes Produkt. Beide zeigen unterschiedliche Seiten meiner Arbeit.","work.kimi.type":"KUNDENPROJEKT · WEBSITE","work.kimi.body":"Website für ein lokales Beauty Studio in Erfurt.","work.trading.type":"EIGENES PRODUKT · WEB APP","work.trading.body":"Eigenes Interface für Marktübersicht, Charts und Trading Workflows.",
-"cap.label":"Leistungen","cap.title":"Vom ersten Konzept bis zum laufenden Betrieb.","cap1.title":"Webdesign & Entwicklung","cap1.body":"Individuelle Unternehmenswebsites, Relaunches und Landingpages. Klar strukturiert, responsive und passend zum jeweiligen Geschäft.","cap2.title":"Domain & Infrastruktur","cap2.body":"Domain, DNS, Hosting, SSL und professionelle E Mail. Die technische Basis wird sauber eingerichtet und verständlich dokumentiert.","cap3.title":"SEO & Sichtbarkeit","cap3.body":"Technisches SEO, lokale Suche, strukturierte Daten, Search Console und Performance. So kann die Website von Suchmaschinen sauber verstanden werden.","cap4.title":"Weiterentwicklung","cap4.body":"Neue Inhalte, Anpassungen, Fehlerbehebung und Verbesserungen nach dem Launch. Direkter Kontakt ohne komplizierte Prozesse.",
-"process.label":"Ablauf","process.title":"Ein klarer Weg vom ersten Gespräch bis zum Launch.","p1.title":"Verstehen","p1.body":"Ziel, Zielgruppe und vorhandenen Auftritt analysieren.","p2.title":"Konzept","p2.body":"Struktur, Inhalte und visuelle Richtung festlegen.","p3.title":"Build","p3.body":"Responsive entwickeln, testen und technisch optimieren.","p4.title":"Launch","p4.body":"Domain, SEO Basis und finale Qualitätschecks.","p5.title":"Support","p5.body":"Änderungen und Weiterentwicklung nach Veröffentlichung.",
+"work.label":"Ausgewählte Arbeiten","work.heading":"Websites und Interfaces, die unterschiedliche Aufgaben lösen.","work.intro":"Kundenprojekt und eigenes Produkt. Beide zeigen unterschiedliche Seiten meiner Arbeit.","work.kimi.type":"KUNDENPROJEKT · WEBSITE","work.kimi.body":"Website für ein lokales Beauty-Studio in Erfurt.","work.trading.type":"EIGENES PRODUKT · WEB APP","work.trading.body":"Eigenes Interface für Marktübersicht, Charts und Trading Workflows.",
+"cap.label":"Leistungen","cap.title":"Vom ersten Konzept bis zum laufenden Betrieb.","cap1.title":"Webdesign & Entwicklung","cap1.body":"Individuelle Unternehmenswebsites, Relaunches und Landingpages. Klar strukturiert, responsive und passend zum jeweiligen Geschäft.","cap2.title":"Domain & Infrastruktur","cap2.body":"Domain, DNS, Hosting, SSL und professionelle E-Mail. Die technische Basis wird sauber eingerichtet und verständlich dokumentiert.","cap3.title":"SEO & Sichtbarkeit","cap3.body":"Technisches SEO, lokale Suche, strukturierte Daten, Search Console und Performance. So kann die Website von Suchmaschinen sauber verstanden werden.","cap4.title":"Weiterentwicklung","cap4.body":"Neue Inhalte, Anpassungen, Fehlerbehebung und Verbesserungen nach dem Launch. Direkter Kontakt ohne komplizierte Prozesse.",
+"process.label":"Ablauf","process.title":"Ein klarer Weg vom ersten Gespräch bis zum Launch.","p1.title":"Verstehen","p1.body":"Ziel, Zielgruppe und vorhandenen Auftritt analysieren.","p2.title":"Konzept","p2.body":"Struktur, Inhalte und visuelle Richtung festlegen.","p3.title":"Build","p3.body":"Responsive entwickeln, testen und technisch optimieren.","p4.title":"Launch","p4.body":"Domain, SEO-Basis und finale Qualitätschecks.","p5.title":"Support","p5.body":"Änderungen und Weiterentwicklung nach Veröffentlichung.",
 "contact.label":"Projekt starten","contact.a":"Eine Website, die","contact.b":"zu deinem Unternehmen passt.","contact.body":"Schick mir ein paar Sätze zu deinem Projekt. Für den Anfang reichen Ziel, aktueller Stand und was besser werden soll.",
-"form.name":"Name / Unternehmen","form.email":"E Mail","form.project":"Projekt","form.privacy":"Ich habe die <a href=\"/datenschutz.html\" target=\"_blank\">Datenschutzerklärung</a> gelesen.","form.send":"Anfrage vorbereiten","form.status":"E Mail Anwendung wird geöffnet …"
+"form.name":"Name / Unternehmen","form.email":"E-Mail","form.project":"Projekt","form.privacy":"Ich habe die <a href=\"/datenschutz.html\" target=\"_blank\">Datenschutzerklärung</a> gelesen.","form.send":"Anfrage vorbereiten","form.status":"E-Mail Anwendung wird geöffnet …"
 },
 vi:{
 "nav.work":"Dự án","nav.services":"Dịch vụ","nav.process":"Quy trình","nav.contact":"Liên hệ",
@@ -98,8 +98,8 @@ const r=hero.getBoundingClientRect();
 if(e.clientY>=r.top&&e.clientY<=r.bottom){
 const x=((e.clientX-r.left)/r.width-.5)*2;
 const y=((e.clientY-r.top)/r.height-.5)*2;
-hero.style.setProperty("--hx",x.toFixed(3));
-hero.style.setProperty("--hy",y.toFixed(3))
+hero.style.setProperty("--pointer-x",(x*18).toFixed(1)+"px");
+hero.style.setProperty("--pointer-y",(y*14).toFixed(1)+"px")
 }}
 },{passive:true})
 }
@@ -112,7 +112,7 @@ if(this.elements.website.value)return;
 if(!this.checkValidity()){this.reportValidity();return}
 const data=new FormData(this);
 const subject=encodeURIComponent("TC7 Projektanfrage | "+data.get("name"));
-const body=encodeURIComponent("Name / Unternehmen: "+data.get("name")+"\nE Mail: "+data.get("email")+"\n\nProjekt:\n"+data.get("project"));
+const body=encodeURIComponent("Name / Unternehmen: "+data.get("name")+"\nE-Mail: "+data.get("email")+"\n\nProjekt:\n"+data.get("project"));
 document.querySelector(".status").textContent=COPY[document.documentElement.lang]["form.status"];
 location.href="mailto:cuong8993@gmail.com?subject="+subject+"&body="+body
 });
