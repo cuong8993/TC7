@@ -138,3 +138,22 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 }
 @media(max-width:390px){.brand-type strong{font-size:13px!important}.brand-mark{width:27px!important;height:27px!important}.language-trigger{min-width:55px;padding:0 7px}}
 @media(prefers-reduced-motion:reduce){.hero-light-canvas{opacity:.55}}
+
+/* Language dropdown v2: identical flag rendering on desktop and mobile */
+.language-current-flag{width:21px!important;height:14px!important;display:block!important;object-fit:cover;border-radius:2px;box-shadow:0 0 0 1px rgba(255,255,255,.14)}
+.language-option{grid-template-columns:25px 1fr!important}
+.language-option img{width:22px;height:15px;display:block;object-fit:cover;border-radius:2px;box-shadow:0 0 0 1px rgba(255,255,255,.12)}
+.language-option b{font-size:13px;font-weight:600}
+.language-option small{display:none!important}
+
+/* The hero is deliberately exactly two lines at every viewport */
+.hero h1 span{display:block!important;white-space:nowrap!important}
+@media(min-width:681px){
+  .hero h1{font-size:clamp(3.25rem,5.15vw,5.25rem)!important;line-height:.92!important;letter-spacing:-.06em!important}
+}
+@media(max-width:680px){
+  .hero h1{font-size:clamp(1.6rem,7.4vw,3.15rem)!important;line-height:.96!important;letter-spacing:-.055em!important}
+  .hero h1 span{white-space:nowrap!important}
+  .language-current-flag{width:20px!important;height:13px!important}
+  .language-trigger{min-width:66px!important}
+}
