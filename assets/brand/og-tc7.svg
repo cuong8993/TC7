@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<rect width="1200" height="630" fill="#08090c"/>
+<circle cx="1020" cy="100" r="360" fill="#3152ff" opacity=".12"/>
+<g transform="translate(90 126)">
+  <rect width="378" height="378" rx="16" fill="#081426"/>
+  <path d="M0 132.28V75.587L377.957 0l-68.033 323.53-56.694 11.339 68.033-266.838-226.774 45.354v253.231l-56.694 11.339V124.72Z" fill="#fff" transform="translate(0 378) scale(1 -1)"/>
+  <path d="M141.734 357.164V160.626l126.616-25.323-15.496 59.717-54.426 10.96v83.15l32.126-6.425-15.119 59.717Z" fill="#fff"/>
+</g>
+<text x="540" y="280" fill="#f3f1ea" font-family="Arial,Helvetica,sans-serif" font-size="108" font-weight="700" letter-spacing="-7">TC7 STUDIO</text>
+<text x="545" y="340" fill="#8d9098" font-family="Arial,Helvetica,sans-serif" font-size="27">WEB · BRAND · GROWTH</text>
+<text x="545" y="400" fill="#f3f1ea" font-family="Arial,Helvetica,sans-serif" font-size="30">Websites für lokale Unternehmen.</text>
+<text x="545" y="448" fill="#8d9098" font-family="Arial,Helvetica,sans-serif" font-size="22">DE · EN · VI  /  Weimar, Germany</text>
+</svg>
