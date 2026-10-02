@@ -157,3 +157,57 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
   .language-current-flag{width:20px!important;height:13px!important}
   .language-trigger{min-width:66px!important}
 }
+
+/* Typography hierarchy: hero remains the largest display type */
+.hero h1{line-height:1.06!important}
+.section-title{font-size:clamp(2.45rem,4.25vw,4.65rem)!important;line-height:1.08!important;letter-spacing:-.052em!important}
+.contact h2{font-size:clamp(2.8rem,4.45vw,4.8rem)!important;line-height:1.08!important;letter-spacing:-.055em!important}
+.ui-card h3{line-height:1.06!important}
+.mini-site-title{line-height:1.04!important}
+.project-caption h3{line-height:1.08!important}
+.capability h3{line-height:1.12!important}
+.process-step h3{line-height:1.14!important}
+
+/* Shared TC7 STUDIO wordmark: same treatment in header and footer */
+.brand-wordmark strong{
+  display:inline-block;
+  font-size:20px;
+  font-weight:760;
+  letter-spacing:-.025em;
+  line-height:1;
+  background:linear-gradient(118deg,#d9e0ff 0%,#9cadff 34%,#7084ff 62%,#b693ff 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  text-shadow:
+    0 1px 0 rgba(255,255,255,.16),
+    0 2px 0 rgba(32,42,91,.28),
+    0 4px 10px rgba(55,77,220,.20),
+    0 0 22px rgba(86,105,255,.18);
+  transform:perspective(420px) rotateX(2.5deg);
+}
+.footer-wordmark{display:inline-flex;align-items:center;line-height:1;perspective:none;font-size:initial;font-weight:initial;letter-spacing:initial}
+.footer-wordmark strong{font-size:20px}
+
+/* Vietnamese accents need more vertical breathing room */
+html[lang="vi"] .hero h1{line-height:1.13!important}
+html[lang="vi"] .section-title,
+html[lang="vi"] .contact h2{line-height:1.14!important}
+html[lang="vi"] .capability h3,
+html[lang="vi"] .process-step h3,
+html[lang="vi"] .project-caption h3{line-height:1.18!important}
+
+@media(max-width:680px){
+  .hero h1{line-height:1.08!important}
+  .section-title{font-size:clamp(2.1rem,10vw,2.85rem)!important;line-height:1.1!important}
+  .contact h2{font-size:clamp(2.2rem,10.5vw,2.95rem)!important;line-height:1.1!important}
+  .brand-wordmark strong,.footer-wordmark strong{font-size:15px!important}
+  html[lang="vi"] .hero h1{line-height:1.15!important}
+  html[lang="vi"] .section-title,
+  html[lang="vi"] .contact h2{line-height:1.16!important}
+  html[lang="vi"] .hero h1{font-size:clamp(1.5rem,6.8vw,2.85rem)!important}
+  html[lang="en"] .hero h1{font-size:clamp(1.4rem,6.15vw,2.6rem)!important}
+}
+@media(max-width:390px){
+  .brand-wordmark strong,.footer-wordmark strong{font-size:13px!important}
+}
