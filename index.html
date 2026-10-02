@@ -43,10 +43,17 @@
       <a href="#contact" data-t="nav.contact">Kontakt</a>
     </nav>
     <div class="header-tools">
-      <div class="langs" aria-label="Sprache">
-        <button class="active" data-lang="de" type="button">DE</button><span>/</span>
-        <button data-lang="vi" type="button">VI</button><span>/</span>
-        <button data-lang="en" type="button">EN</button>
+      <div class="language-select">
+        <button class="language-trigger" type="button" aria-haspopup="listbox" aria-expanded="false" aria-label="Sprache wählen">
+          <span class="language-current-flag" aria-hidden="true">🇩🇪</span>
+          <span class="language-current-code">DE</span>
+          <span class="language-chevron" aria-hidden="true">⌄</span>
+        </button>
+        <div class="language-menu" role="listbox" aria-label="Sprache">
+          <button class="language-option active" data-lang="de" type="button" role="option" aria-selected="true"><span>🇩🇪</span><b>Deutsch</b><small>DE</small></button>
+          <button class="language-option" data-lang="vi" type="button" role="option" aria-selected="false"><span>🇻🇳</span><b>Tiếng Việt</b><small>VI</small></button>
+          <button class="language-option" data-lang="en" type="button" role="option" aria-selected="false"><span>🇬🇧</span><b>English</b><small>EN</small></button>
+        </div>
       </div>
       <button class="menu-btn" type="button" aria-label="Menü öffnen"><span></span><span></span></button>
     </div>
@@ -62,6 +69,7 @@
 
 <main>
 <section class="hero" id="top">
+  <canvas class="hero-light-canvas" id="heroLightCanvas" aria-hidden="true"></canvas>
   <div class="hero-grid"></div>
   <div class="hero-lighting" aria-hidden="true">
     <i class="hero-orb orb-a"></i>
@@ -72,12 +80,11 @@
   <div class="hero-content shell">
     <div class="hero-kicker"><i class="status-dot"></i><span data-t="hero.kicker">Webdesign · Entwicklung · SEO</span></div>
     <h1>
-      <span data-t="hero.a">Websites, die</span>
-      <span data-t="hero.b">professionell wirken.</span>
-      <span class="accent" data-t="hero.c">Technik, die mithält.</span>
+      <span data-t="hero.a">Websites mit Anspruch.</span>
+      <span class="accent" data-t="hero.b">Design und Code, die überzeugen.</span>
     </h1>
     <div class="hero-intro">
-      <p data-t="hero.body">Ich entwickle digitale Auftritte für Restaurants, Studios und kleine Unternehmen. Klare Strategie, hochwertiges Design, saubere Entwicklung und Support nach dem Launch.</p>
+      <p data-t="hero.body">Wir entwickeln hochwertige Websites für Unternehmen, Restaurants und Studios. Klar im Design, sauber im Code und zuverlässig im Betrieb.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#contact"><span data-t="hero.cta">Projekt besprechen</span><b>↗</b></a>
         <a class="btn btn-ghost" href="#work" data-t="hero.work">Arbeiten ansehen</a>
@@ -132,7 +139,7 @@
 <section class="light section">
   <div class="shell">
     <div class="section-head reveal">
-      <p class="eyebrow" data-t="system.label">Wie ich Websites aufbaue</p>
+      <p class="eyebrow" data-t="system.label">Wie wir Websites aufbauen</p>
       <div>
         <h2 class="section-title" data-t="system.title">Design, Inhalt und Technik müssen zusammen funktionieren.</h2>
         <p class="section-copy" data-t="system.copy">Eine gute Website führt Besucher, vermittelt Qualität und bleibt technisch zuverlässig. Deshalb denke ich Struktur, Interface, Performance und Auffindbarkeit von Anfang an zusammen.</p>
@@ -210,7 +217,7 @@
     <p class="eyebrow" data-t="work.label">Ausgewählte Arbeiten</p>
     <div>
       <h2 class="section-title" data-t="work.heading">Websites und Interfaces, die unterschiedliche Aufgaben lösen.</h2>
-      <p class="section-copy" data-t="work.intro">Kundenprojekt und eigenes Produkt. Beide zeigen unterschiedliche Seiten meiner Arbeit.</p>
+      <p class="section-copy" data-t="work.intro">Kundenprojekt und eigenes Produkt. Beide zeigen unterschiedliche Seiten unserer Arbeit.</p>
     </div>
   </div>
 
@@ -319,7 +326,7 @@
     <h2 class="reveal"><span data-t="contact.a">Eine Website, die</span><br><span data-t="contact.b">zu deinem Unternehmen passt.</span></h2>
     <div class="contact-grid reveal">
       <div class="contact-copy">
-        <p data-t="contact.body">Schick mir ein paar Sätze zu deinem Projekt. Für den Anfang reichen Ziel, aktueller Stand und was besser werden soll.</p>
+        <p data-t="contact.body">Schick uns ein paar Sätze zu deinem Projekt. Für den Anfang reichen Ziel, aktueller Stand und was besser werden soll.</p>
         <div class="contact-actions">
           <a href="tel:+491739117103">Telefon</a>
           <a href="https://wa.me/491739117103" target="_blank" rel="noreferrer">WhatsApp ↗</a>
@@ -342,7 +349,7 @@
 
 <footer class="site-footer">
   <div class="footer-top shell">
-    <div class="footer-brand"><img src="/assets/brand/tc7-mark-transparent.svg" alt=""><strong>TC7 STUDIO</strong></div>
+    <div class="footer-wordmark" aria-label="TC7 Studio"><span class="footer-tc">TC</span><span class="footer-slash">/</span><span class="footer-studio">STUDIO</span></div>
     <div class="footer-meta">
       <div>WEB · DESIGN · DEVELOPMENT</div>
       <div><a href="/impressum.html">Impressum</a><a href="/datenschutz.html">Datenschutz</a></div>
