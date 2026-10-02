@@ -16,7 +16,7 @@ Premium multilingual website for **TC7 Studio**, an independent digital studio f
 - Impressum and Datenschutz pages with the currently supplied operator/contact data
 - privacy acknowledgement on the project enquiry form
 - no Google Fonts, analytics or advertising trackers in the current build
-- basic Open Graph / Twitter metadata
+- Open Graph / Twitter metadata plus a TC7 social-sharing artwork
 - Cloudflare Workers static-assets configuration
 
 ## Contact currently used
@@ -32,11 +32,21 @@ The same mobile number is currently used for phone and WhatsApp. It can be repla
 ## Important pending launch items
 
 - add the final custom domain; then add a canonical URL and absolute hreflang URLs
-- create and add a production Open Graph preview image once the final domain/brand asset is fixed
+- once the final domain is connected, change canonical / Open Graph / hreflang references to final absolute URLs and optionally export the share artwork as PNG for maximum social-platform compatibility
 - review the legal pages before commercial launch and add any additional legally required business details that later become applicable
 - decide whether to publish concrete starting prices and typical project durations; these were intentionally not invented
 - add genuine testimonials or measurable results only when real client evidence is available
-- replace the initials founder mark with a real portrait later if desired
+- add a real founder portrait later if desired; the TC7 brand mark is used for now
+
+## Brand assets
+
+- Primary logo / favicon: `assets/brand/tc7-logo.svg`
+- Social share artwork: `assets/brand/og-tc7.svg`
+- The old root-level logo file has been removed.
+
+## Contact form
+
+The current form validates required fields, includes a privacy acknowledgement and a honeypot field, then prepares a pre-filled message to `cuong8993@gmail.com` in the visitor's email app. Phone, WhatsApp and direct email are also available as working alternatives. A fully server-side form can be added later once the final domain/email infrastructure is decided.
 
 ## Deploy
 
