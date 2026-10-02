@@ -1,58 +1,54 @@
 # TC7 Studio
 
-Premium multilingual website for **TC7 Studio**, an independent digital studio for web design, redesign, domain/DNS setup, SEO, advertising foundations and ongoing support.
+Premium multilingual website for **TC7 Studio**, an independent web studio for design, development, domain/DNS setup, SEO and ongoing support.
 
-## Current implementation
+## Current design direction
 
-- German-first positioning with browser-language detection for DE / EN / VI
-- consistent first-person studio voice
-- concrete conversion-focused hero message
-- Kimi.Studio as a real live reference project
-- direct contact with Thai Cuong Nguyen via phone, WhatsApp and email
-- multilingual language switcher with saved preference
-- before / after redesign slider using a native keyboard- and touch-operable range input
-- reduced-motion mode, visible keyboard focus states and responsive layouts
-- transparent project framing: clear quote and timeline before work starts
-- Impressum and Datenschutz pages with the currently supplied operator/contact data
-- privacy acknowledgement on the project enquiry form
-- no Google Fonts, analytics or advertising trackers in the current build
-- Open Graph / Twitter metadata plus a TC7 social-sharing artwork
-- Cloudflare Workers static-assets configuration
+The homepage was rebuilt as a product-led studio experience inspired by the clarity and pacing of high-end SaaS sites, while remaining an original TC7 implementation.
 
-## Contact currently used
-
-**Thai Cuong Nguyen**  
-Bonhoefferstr. 41  
-99427 Weimar  
-0173 9117103  
-cuong8993@gmail.com
-
-The same mobile number is currently used for phone and WhatsApp. It can be replaced later without changing the site structure.
-
-## Important pending launch items
-
-- add the final custom domain; then add a canonical URL and absolute hreflang URLs
-- once the final domain is connected, change canonical / Open Graph / hreflang references to final absolute URLs and optionally export the share artwork as PNG for maximum social-platform compatibility
-- review the legal pages before commercial launch and add any additional legally required business details that later become applicable
-- decide whether to publish concrete starting prices and typical project durations; these were intentionally not invented
-- add genuine testimonials or measurable results only when real client evidence is available
-- add a real founder portrait later if desired; the TC7 brand mark is used for now
+- large claim-first hero with a live development showcase
+- interactive four-layer web system: structure, interface, performance and search
+- premium alternating dark / warm-light visual system
+- strong typography, asymmetric layouts and restrained micro-animation
+- service architecture instead of generic agency cards
+- compact Kimi.Studio reference rather than a large case study
+- clear five-step process and focused contact section
+- DE / VI / EN language switching with rewritten natural Vietnamese copy
+- responsive layouts, keyboard focus states and reduced-motion support
+- no external font dependency
 
 ## Brand assets
 
-- Primary logo / favicon: `assets/brand/tc7-logo.svg`
-- Social share artwork: `assets/brand/og-tc7.svg`
-- The old root-level logo file has been removed.
+- Original uploaded logo / favicon: `assets/brand/tc7-logo.svg`
+- Transparent website mark: `assets/brand/tc7-mark-transparent.svg`
+- Social preview artwork: `assets/brand/og-tc7.svg`
 
-## Contact form
+The transparent mark is used on the website itself so the logo reads as a symbol rather than a square tile. The original uploaded file remains the favicon.
 
-The current form validates required fields, includes a privacy acknowledgement and a honeypot field, then prepares a pre-filled message to `cuong8993@gmail.com` in the visitor's email app. Phone, WhatsApp and direct email are also available as working alternatives. A fully server-side form can be added later once the final domain/email infrastructure is decided.
+## Contact
 
-## Deploy
+The public homepage keeps personal details discreet. Phone, WhatsApp and email are available as contact actions; the full operator details remain on the legal pages.
 
-Cloudflare Workers Static Assets is configured through `wrangler.jsonc`. The repository root is deployed directly; no build step is required.
+Current contact:
+- Phone / WhatsApp: 0173 9117103
+- Email: cuong8993@gmail.com
 
-## Brand
+## Architecture
 
-**TC7 Studio**  
-*Web · Brand · Growth*
+- `index.html` — semantic page structure and SEO metadata
+- `styles.css` — complete responsive design system
+- `app.js` — language switching, mobile navigation, interactive system tabs, scroll reveals and contact form
+- `impressum.html` / `datenschutz.html` — legal pages
+- `wrangler.jsonc` — Cloudflare Workers Static Assets deployment
+
+## Still pending after the final domain is connected
+
+- set final canonical URL
+- convert hreflang and Open Graph URLs to absolute production URLs
+- optionally export the social preview as PNG for maximum platform compatibility
+- replace Gmail with a TC7 business email when available
+- replace the mailto enquiry with a server-side form if desired
+
+## Deployment
+
+Cloudflare Workers Static Assets deploys the repository root directly. No build step is required.
