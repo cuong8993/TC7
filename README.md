@@ -2,42 +2,47 @@
 
 Premium multilingual website for **TC7 Studio**, an independent digital studio for web design, redesign, domain/DNS setup, SEO, advertising foundations and ongoing support.
 
-## What is implemented
+## Current implementation
 
-- premium dark editorial visual direction with TC7 blue accent
-- responsive desktop, tablet and mobile layouts
-- English / German / Vietnamese language switcher with saved language preference
-- animated hero, subtle cursor light, loader and scroll reveals
-- Kimi.Studio flagship case-study presentation
-- interactive before / after redesign slider
-- service, process, studio and contact sections
-- direct project enquiry via email client
-- reduced-motion accessibility support
-- basic SEO title and meta description
-- no framework and no build step: the site is immediately deployable as static HTML
+- German-first positioning with browser-language detection for DE / EN / VI
+- consistent first-person studio voice
+- concrete conversion-focused hero message
+- Kimi.Studio as a real live reference project
+- direct contact with Thai Cuong Nguyen via phone, WhatsApp and email
+- multilingual language switcher with saved preference
+- before / after redesign slider using a native keyboard- and touch-operable range input
+- reduced-motion mode, visible keyboard focus states and responsive layouts
+- transparent project framing: clear quote and timeline before work starts
+- Impressum and Datenschutz pages with the currently supplied operator/contact data
+- privacy acknowledgement on the project enquiry form
+- no Google Fonts, analytics or advertising trackers in the current build
+- basic Open Graph / Twitter metadata
+- Cloudflare Workers static-assets configuration
 
-## Preview locally
+## Contact currently used
 
-```bash
-python -m http.server 8080
-```
+**Thai Cuong Nguyen**  
+Bonhoefferstr. 41  
+99427 Weimar  
+0173 9117103  
+cuong8993@gmail.com
 
-Then open `http://localhost:8080`.
+The same mobile number is currently used for phone and WhatsApp. It can be replaced later without changing the site structure.
+
+## Important pending launch items
+
+- add the final custom domain; then add a canonical URL and absolute hreflang URLs
+- create and add a production Open Graph preview image once the final domain/brand asset is fixed
+- review the legal pages before commercial launch and add any additional legally required business details that later become applicable
+- decide whether to publish concrete starting prices and typical project durations; these were intentionally not invented
+- add genuine testimonials or measurable results only when real client evidence is available
+- replace the initials founder mark with a real portrait later if desired
 
 ## Deploy
 
-The current site is a dependency-free static site, so it can be deployed directly with GitHub Pages, Netlify, Cloudflare Pages, Vercel or a normal web host. The publish directory is the repository root and there is no build command.
-
-## Before commercial launch
-
-Two real-world details still need to be replaced/added because they were not available in the repository:
-
-1. **Contact address:** the form currently opens `hello@tc7.studio`. Replace it in `index.html` if the final TC7 email/domain is different.
-2. **German legal pages:** add the real `Impressum` and `Datenschutzerklärung` before using the website commercially. These require the actual operator/business details and should not be invented in code.
-
-Once the final domain is known, also add its canonical URL and production Open Graph URL.
+Cloudflare Workers Static Assets is configured through `wrangler.jsonc`. The repository root is deployed directly; no build step is required.
 
 ## Brand
 
 **TC7 Studio**  
-*Design like an agency. Support like a partner.*
+*Web · Brand · Growth*
