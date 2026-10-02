@@ -1,7 +1,7 @@
 const COPY={
 de:{
 "nav.work":"Arbeit","nav.services":"Leistungen","nav.process":"Ablauf","nav.contact":"Kontakt",
-"hero.kicker":"Webdesign · Entwicklung · SEO","hero.a":"Websites mit Anspruch.","hero.b":"Design und Code, die überzeugen.","hero.body":"Wir entwickeln hochwertige Websites für Unternehmen, Restaurants und Studios. Klar im Design, sauber im Code und zuverlässig im Betrieb.","hero.cta":"Projekt besprechen","hero.work":"Arbeiten ansehen",
+"hero.kicker":"Webdesign · Entwicklung · SEO","hero.a":"Websites, die überzeugen.","hero.b":"Technik, die mitwächst.","hero.body":"Wir entwickeln hochwertige Websites für Unternehmen, Restaurants und Studios. Klar im Design, sauber im Code und zuverlässig im Betrieb.","hero.cta":"Projekt besprechen","hero.work":"Arbeiten ansehen",
 "proof.1":"Responsive gedacht","proof.2":"Performance im Fokus","proof.3":"SEO technisch vorbereitet","proof.4":"Sauber bedienbar",
 "system.label":"Wie wir Websites aufbauen","system.title":"Design, Inhalt und Technik müssen zusammen funktionieren.","system.copy":"Eine gute Website führt Besucher, vermittelt Qualität und bleibt technisch zuverlässig. Deshalb denken wir Struktur, Interface, Performance und Auffindbarkeit von Anfang an zusammen.",
 "tab.1":"Struktur","tab.2":"Interface","tab.3":"Performance","tab.4":"Search",
@@ -17,7 +17,7 @@ de:{
 },
 vi:{
 "nav.work":"Dự án","nav.services":"Dịch vụ","nav.process":"Quy trình","nav.contact":"Liên hệ",
-"hero.kicker":"Thiết kế web · phát triển · SEO","hero.a":"Website có chất lượng.","hero.b":"Thiết kế đẹp, code vững.","hero.body":"Chúng tôi xây dựng website hiện đại cho doanh nghiệp, nhà hàng và studio. Giao diện rõ ràng, kỹ thuật gọn và hỗ trợ ổn định sau khi ra mắt.","hero.cta":"Trao đổi dự án","hero.work":"Xem dự án",
+"hero.kicker":"Thiết kế web · phát triển · SEO","hero.a":"Website tạo ấn tượng.","hero.b":"Công nghệ cùng phát triển.","hero.body":"Chúng tôi xây dựng website hiện đại cho doanh nghiệp, nhà hàng và studio. Giao diện rõ ràng, kỹ thuật gọn và hỗ trợ ổn định sau khi ra mắt.","hero.cta":"Trao đổi dự án","hero.work":"Xem dự án",
 "proof.1":"Responsive từ đầu","proof.2":"Ưu tiên tốc độ","proof.3":"Chuẩn bị tốt cho SEO","proof.4":"Dễ sử dụng",
 "system.label":"Cách chúng tôi xây website","system.title":"Thiết kế, nội dung và kỹ thuật phải hoạt động cùng nhau.","system.copy":"Một website tốt cần dễ hiểu, tạo cảm giác chuyên nghiệp và vận hành ổn định. Vì vậy cấu trúc, giao diện, tốc độ và khả năng tìm kiếm được xử lý như một hệ thống chung.",
 "tab.1":"Cấu trúc","tab.2":"Giao diện","tab.3":"Hiệu năng","tab.4":"Tìm kiếm",
@@ -33,7 +33,7 @@ vi:{
 },
 en:{
 "nav.work":"Work","nav.services":"Services","nav.process":"Process","nav.contact":"Contact",
-"hero.kicker":"Web design · development · SEO","hero.a":"Websites with substance.","hero.b":"Design and code that perform.","hero.body":"We build refined websites for businesses, restaurants and studios. Clear design, clean development and reliable support after launch.","hero.cta":"Discuss a project","hero.work":"View work",
+"hero.kicker":"Web design · development · SEO","hero.a":"Websites that convince.","hero.b":"Technology that grows with you.","hero.body":"We build refined websites for businesses, restaurants and studios. Clear design, clean development and reliable support after launch.","hero.cta":"Discuss a project","hero.work":"View work",
 "proof.1":"Responsive from the start","proof.2":"Performance focused","proof.3":"Technically ready for SEO","proof.4":"Easy to use",
 "system.label":"How we build websites","system.title":"Design, content and technology need to work together.","system.copy":"A strong website guides people, communicates quality and stays technically reliable. We treat structure, interface, performance and discoverability as one system from the beginning.",
 "tab.1":"Structure","tab.2":"Interface","tab.3":"Performance","tab.4":"Search",
@@ -49,13 +49,13 @@ en:{
 }
 };
 
-const LANG_META={de:{flag:"🇩🇪",code:"DE"},vi:{flag:"🇻🇳",code:"VI"},en:{flag:"🇬🇧",code:"EN"}};
+const LANG_META={de:{flag:"/assets/flags/de.svg",code:"DE"},vi:{flag:"/assets/flags/vi.svg",code:"VI"},en:{flag:"/assets/flags/en.svg",code:"EN"}};
 function setLanguage(lang,updateUrl=true){
 if(!COPY[lang])lang="de";
 document.documentElement.lang=lang;
 document.querySelectorAll("[data-t]").forEach(el=>{const value=COPY[lang][el.dataset.t];if(value!==undefined)el.innerHTML=value});
 document.querySelectorAll("[data-lang]").forEach(btn=>{const active=btn.dataset.lang===lang;btn.classList.toggle("active",active);btn.setAttribute("aria-selected",String(active))});
-const meta=LANG_META[lang];document.querySelector(".language-current-flag").textContent=meta.flag;document.querySelector(".language-current-code").textContent=meta.code;
+const meta=LANG_META[lang];document.querySelector(".language-current-flag").src=meta.flag;document.querySelector(".language-current-code").textContent=meta.code;
 localStorage.setItem("tc7lang",lang);
 if(updateUrl){const url=new URL(location.href);url.searchParams.set("lang",lang);history.replaceState(null,"",url)}
 }
