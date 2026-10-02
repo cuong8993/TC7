@@ -211,3 +211,13 @@ html[lang="vi"] .project-caption h3{line-height:1.18!important}
 @media(max-width:390px){
   .brand-wordmark strong,.footer-wordmark strong{font-size:13px!important}
 }
+
+/* Keep the hero visibly dominant on small screens too */
+@media(max-width:680px){
+  .section-title{font-size:clamp(1.75rem,5.8vw,2.45rem)!important}
+  .contact h2{font-size:clamp(1.85rem,6vw,2.55rem)!important}
+  html[lang="vi"] .section-title{font-size:clamp(1.65rem,5.55vw,2.3rem)!important}
+  html[lang="vi"] .contact h2{font-size:clamp(1.72rem,5.7vw,2.4rem)!important}
+  html[lang="en"] .section-title{font-size:clamp(1.55rem,5.15vw,2.15rem)!important}
+  html[lang="en"] .contact h2{font-size:clamp(1.62rem,5.35vw,2.25rem)!important}
+}
