@@ -335,3 +335,81 @@ body{background:var(--night);color:var(--text-main)}
   .contact{background-color:#090c11!important}
   .system-wrap{box-shadow:none}
 }
+
+/* Hero preview: fully integrated dark showcase */
+.preview-window{
+  background:
+    radial-gradient(circle at 82% 18%,rgba(78,98,255,.12),transparent 28%),
+    linear-gradient(145deg,#121720 0%,#0d1118 48%,#0a0d13 100%)!important;
+  color:#f2f4f8!important;
+  border:1px solid rgba(255,255,255,.105);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.055),
+    inset 0 -1px 0 rgba(255,255,255,.025),
+    0 28px 80px rgba(0,0,0,.42),
+    0 0 55px rgba(63,83,255,.075)!important;
+  overflow:hidden;
+}
+.preview-window:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    linear-gradient(rgba(255,255,255,.027) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.027) 1px,transparent 1px);
+  background-size:42px 42px;
+  mask-image:linear-gradient(to bottom,rgba(0,0,0,.72),transparent 82%);
+  -webkit-mask-image:linear-gradient(to bottom,rgba(0,0,0,.72),transparent 82%);
+}
+.preview-window:after{
+  content:"";
+  position:absolute;
+  width:52%;
+  aspect-ratio:1;
+  right:-18%;
+  top:-28%;
+  border-radius:50%;
+  pointer-events:none;
+  background:radial-gradient(circle,rgba(85,105,255,.17),rgba(65,82,210,.045) 46%,transparent 72%);
+  filter:blur(12px);
+  animation:previewInnerGlow 9s ease-in-out infinite alternate;
+}
+@keyframes previewInnerGlow{
+  to{transform:translate(-14%,22%) scale(1.12);opacity:.72}
+}
+.preview-nav,.preview-hero,.preview-foot{position:relative;z-index:2}
+.preview-nav{color:#a8adb7!important}
+.preview-nav strong{
+  color:#edf0f6!important;
+  text-shadow:0 1px 12px rgba(255,255,255,.06);
+}
+.preview-nav span{color:#727986!important}
+.preview-hero small{color:#7f8794!important}
+.preview-hero h2{
+  color:#f2f3f6!important;
+  line-height:.94!important;
+  text-shadow:0 2px 20px rgba(0,0,0,.28);
+}
+.preview-hero h2 em{
+  color:transparent!important;
+  background:linear-gradient(112deg,#93a4ff 0%,#7188ff 52%,#ba96ff 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  text-shadow:none!important;
+  filter:drop-shadow(0 0 16px rgba(94,112,255,.18));
+}
+.preview-foot{
+  border-top-color:rgba(255,255,255,.1)!important;
+  color:#757c88!important;
+}
+@media(max-width:680px){
+  .preview-window{
+    background:
+      radial-gradient(circle at 84% 14%,rgba(78,98,255,.11),transparent 27%),
+      linear-gradient(145deg,#11161f,#0b0f15)!important;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  .preview-window:after{animation:none!important}
+}
