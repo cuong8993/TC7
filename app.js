@@ -18,7 +18,7 @@ de:{
 vi:{
 "nav.work":"Dự án","nav.services":"Dịch vụ","nav.process":"Quy trình","nav.contact":"Liên hệ",
 "hero.kicker":"Thiết kế website · Phát triển · SEO",
-"hero.a":"Website tạo ấn tượng.","hero.b":"Công nghệ sẵn sàng mở rộng.",
+"hero.a":"Website tạo ấn tượng.","hero.b":"Nền tảng linh hoạt, dễ mở rộng.",
 "hero.body":"Chúng tôi thiết kế và phát triển website cho doanh nghiệp, nhà hàng và studio. Chỉn chu về hình ảnh, vững về kỹ thuật và đồng hành cả sau khi website đi vào hoạt động.",
 "hero.cta":"Trao đổi về dự án","hero.work":"Xem dự án",
 "proof.1":"Hiển thị tốt trên mọi thiết bị","proof.2":"Tối ưu tốc độ","proof.3":"Nền tảng SEO vững","proof.4":"Trải nghiệm dễ sử dụng",
