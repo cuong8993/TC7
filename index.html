@@ -22,6 +22,7 @@
 <link rel="alternate" hreflang="en" href="?lang=en">
 <link rel="alternate" hreflang="x-default" href="?lang=de">
 <link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/cinematic.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"ProfessionalService","name":"TC7 Studio","email":"mailto:cuong8993@gmail.com","telephone":"+49 173 9117103","areaServed":{"@type":"Country","name":"Germany"},"availableLanguage":["de","vi","en"],"serviceType":["Webdesign","Website Entwicklung","Website Relaunch","Domain und DNS Setup","SEO","Website Support"]}
 </script>
@@ -33,16 +34,18 @@
 <header class="site-header">
   <div class="header-inner shell">
     <a class="brand" href="#top" aria-label="TC7 Studio Startseite">
-      <img class="brand-mark" src="/assets/brand/tc7-mark-transparent.svg" alt="">
-      <span class="brand-type brand-wordmark"><strong>TC7 STUDIO</strong></span>
+      <span class="brand-type brand-wordmark"><strong><span class="brand-gradient">TC7</span> <span class="brand-studio">Studio</span></strong></span>
     </a>
     <nav class="main-nav" aria-label="Hauptnavigation">
-      <a href="#work" data-t="nav.work">Arbeit</a>
       <a href="#services" data-t="nav.services">Leistungen</a>
-      <a href="#process" data-t="nav.process">Ablauf</a>
+      <a href="#work" data-t="nav.work">Projekte</a>
+      <a href="#approach" data-t="nav.about">Über uns</a>
       <a href="#contact" data-t="nav.contact">Kontakt</a>
     </nav>
     <div class="header-tools">
+      <button class="ambient-toggle" type="button" aria-label="Kosmische Lichteffekte reduzieren" aria-pressed="false" title="Lichteffekte umschalten">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+      </button>
       <div class="language-select">
         <button class="language-trigger" type="button" aria-haspopup="listbox" aria-expanded="false" aria-label="Sprache wählen">
           <img class="language-current-flag" src="/assets/flags/de.svg" alt="" aria-hidden="true">
@@ -55,75 +58,131 @@
           <button class="language-option" data-lang="en" type="button" role="option" aria-selected="false"><img src="/assets/flags/en.svg" alt=""><b>English</b></button>
         </div>
       </div>
+      <a class="header-cta" href="#contact"><span data-t="hero.cta">Projekt besprechen</span><span aria-hidden="true">→</span></a>
       <button class="menu-btn" type="button" aria-label="Menü öffnen"><span></span><span></span></button>
     </div>
   </div>
 </header>
 
 <div class="mobile-menu" aria-label="Mobile Navigation">
-  <a href="#work" data-t="nav.work">Arbeit</a>
   <a href="#services" data-t="nav.services">Leistungen</a>
+  <a href="#work" data-t="nav.work">Projekte</a>
+  <a href="#approach" data-t="nav.about">Über uns</a>
   <a href="#process" data-t="nav.process">Ablauf</a>
   <a href="#contact" data-t="nav.contact">Kontakt</a>
 </div>
 
 <main>
-<section class="hero" id="top">
+<section class="hero cinematic-hero" id="top">
+  <div class="cosmic-sky" aria-hidden="true"></div>
   <canvas class="hero-light-canvas" id="heroLightCanvas" aria-hidden="true"></canvas>
-  <div class="hero-grid"></div>
-  <div class="hero-lighting" aria-hidden="true">
-    <i class="hero-orb orb-a"></i>
-    <i class="hero-orb orb-b"></i>
-    <i class="hero-orb orb-c"></i>
-    <i class="hero-beam"></i>
-  </div>
+  <div class="cosmic-atmosphere" aria-hidden="true"></div>
+
   <div class="hero-content shell">
-    <div class="hero-kicker"><i class="status-dot"></i><span data-t="hero.kicker">Webdesign · Entwicklung · SEO</span></div>
-    <h1>
-      <span data-t="hero.a">Websites, die überzeugen.</span>
-      <span class="accent" data-t="hero.b">Technik, die mitwächst.</span>
-    </h1>
-    <div class="hero-intro">
-      <p data-t="hero.body">Wir entwickeln hochwertige Websites für Unternehmen, Restaurants und Studios. Klar im Design, sauber im Code und zuverlässig im Betrieb.</p>
+    <div class="hero-copy">
+      <h1>
+        <span data-t="hero.a">Websites, die überzeugen.</span>
+        <span class="accent" data-t="hero.b">Technik, die mitwächst.</span>
+      </h1>
+      <p class="hero-description" data-t="hero.body">Wir entwickeln hochwertige Websites für Unternehmen, Restaurants und Studios. Klar im Design, sauber im Code und zuverlässig im Betrieb.</p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="#contact"><span data-t="hero.cta">Projekt besprechen</span><b>↗</b></a>
-        <a class="btn btn-ghost" href="#work" data-t="hero.work">Arbeiten ansehen</a>
+        <a class="btn btn-primary" href="#contact"><span data-t="hero.cta">Projekt besprechen</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="#work"><span data-t="hero.work">Arbeiten ansehen</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 5h6v6m0-6-9 9"/><path d="M19 13v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/></svg></a>
       </div>
     </div>
 
-    <div class="hero-stage reveal" aria-label="TC7 Entwicklungs Showcase">
-      <div class="stage-shine"></div>
+    <div class="hero-stage cosmic-browser reveal" aria-label="Vorschau einer TC7 Studio Webentwicklung">
       <div class="stage-bar">
-        <div class="stage-dots"><i></i><i></i><i></i></div>
-        <div class="stage-url">tc7.studio / live build</div>
-        <div class="stage-state">SYSTEM READY</div>
+        <div class="stage-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="stage-tabs" aria-hidden="true"><span>⌁ &nbsp; index.html</span><span>◎ &nbsp; Preview</span></div>
+        <span class="stage-close" aria-hidden="true">×</span>
       </div>
       <div class="stage-body">
         <div class="code-pane">
-          <div class="code-head"><span>website.system</span><span>LIVE</span></div>
-          <div class="code-lines" aria-hidden="true">
-            <div class="code-line"><b>01</b><span><i class="c-blue">strategy</i> = clarify(goal, audience)</span></div>
-            <div class="code-line"><b>02</b><span><i class="c-green">structure</i> = semantic(content)</span></div>
-            <div class="code-line"><b>03</b><span><i class="c-warm">interface</i> = design(hierarchy, motion)</span></div>
-            <div class="code-line"><b>04</b><span><i class="c-blue">layout</i> = responsive(viewport)</span></div>
-            <div class="code-line"><b>05</b><span><i class="c-green">performance</i> = minimize(payload)</span></div>
-            <div class="code-line"><b>06</b><span><i class="c-warm">search</i> = structure(metadata, schema)</span></div>
-            <div class="code-line"><b>07</b><span class="c-white">deploy({ quality: "production" })</span></div>
+          <div class="code-sidebar" aria-hidden="true">
+            <strong><span>⌄</span> TC7</strong>
+            <span>▣ &nbsp; index.html</span>
+            <span>◈ &nbsp; styles.css</span>
+            <span>◈ &nbsp; app.js</span>
+            <span>▸ &nbsp; assets</span>
+            <span>▸ &nbsp; pages</span>
+          </div>
+          <div class="code-editor">
+            <div class="code-head"><span>index.html</span><span>×</span></div>
+            <div class="code-lines" aria-hidden="true">
+              <div class="code-line"><b>1</b><span class="c-blue">&lt;!DOCTYPE html&gt;</span></div>
+              <div class="code-line"><b>2</b><span>&lt;html <i class="c-warm">lang</i>=<i class="c-green">"de"</i>&gt;</span></div>
+              <div class="code-line"><b>3</b><span class="c-blue">&lt;head&gt;</span></div>
+              <div class="code-line"><b>4</b><span>&nbsp; &lt;meta <i class="c-warm">charset</i>=<i class="c-green">"utf-8"</i>&gt;</span></div>
+              <div class="code-line"><b>5</b><span>&nbsp; &lt;meta <i class="c-warm">name</i>=<i class="c-green">"viewport"</i>&gt;</span></div>
+              <div class="code-line"><b>6</b><span>&nbsp; &lt;title&gt;TC7 Studio&lt;/title&gt;</span></div>
+              <div class="code-line"><b>7</b><span class="c-blue">&lt;/head&gt;</span></div>
+              <div class="code-line"><b>8</b><span class="c-blue">&lt;body&gt;</span></div>
+              <div class="code-line"><b>9</b><span>&nbsp; &lt;main <i class="c-warm">id</i>=<i class="c-green">"website"</i>&gt;</span></div>
+              <div class="code-line"><b>10</b><span>&nbsp; &nbsp; &lt;section <i class="c-warm">class</i>=<i class="c-green">"hero"</i>&gt;</span></div>
+              <div class="code-line"><b>11</b><span>&nbsp; &nbsp; &nbsp; &lt;h1&gt;Create impact&lt;/h1&gt;</span></div>
+              <div class="code-line"><b>12</b><span>&nbsp; &nbsp; &lt;/section&gt;</span></div>
+              <div class="code-line"><b>13</b><span>&nbsp; &lt;/main&gt;</span></div>
+              <div class="code-line"><b>14</b><span class="c-blue">&lt;/body&gt;</span></div>
+              <div class="code-line"><b>15</b><span class="c-blue">&lt;/html&gt;</span></div>
+            </div>
           </div>
         </div>
         <div class="preview-pane">
-          <div class="preview-aurora"></div>
           <div class="preview-window">
-            <div class="preview-nav"><strong>ATELIER/01</strong><span>WORK · STORY · CONTACT</span></div>
+            <div class="preview-nav"><strong><span>TC7</span> Studio</strong><span aria-hidden="true">☰</span></div>
             <div class="preview-hero">
-              <small>DIGITAL PRESENCE / BUILT WITH INTENT</small>
-              <h2>Clarity.<br>Craft.<br><em>Impact.</em></h2>
+              <h2><span data-t="hero.a">Websites, die überzeugen.</span><br><em data-t="hero.b">Technik, die mitwächst.</em></h2>
+              <p data-t="hero.body">Wir entwickeln hochwertige Websites für Unternehmen, Restaurants und Studios. Klar im Design, sauber im Code und zuverlässig im Betrieb.</p>
+              <div class="preview-actions"><span data-t="hero.cta">Projekt besprechen</span><span data-t="hero.work">Arbeiten ansehen</span></div>
             </div>
-            <div class="preview-foot"><span>RESPONSIVE</span><span>SEMANTIC</span><span>FAST</span><span>SEO READY</span></div>
+            <svg class="preview-landscape" viewBox="0 0 600 240" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+              <defs>
+                <linearGradient id="pSky" x2="0" y2="1"><stop stop-color="#08162f"/><stop offset=".48" stop-color="#201c55"/><stop offset="1" stop-color="#6a4789"/></linearGradient>
+                <linearGradient id="pLake" x2="0" y2="1"><stop stop-color="#6e559a"/><stop offset="1" stop-color="#07152c"/></linearGradient>
+              </defs>
+              <rect width="600" height="240" fill="url(#pSky)"/>
+              <path d="M0 155L55 119L93 136L155 69L210 141L275 102L322 129L390 50L457 132L508 96L600 158V240H0Z" fill="#111b38"/>
+              <path d="M0 168L90 141L125 159L194 107L262 154L322 132L392 93L462 164L528 134L600 164V240H0Z" fill="#202453"/>
+              <path d="M0 182Q170 170 305 178T600 178V240H0Z" fill="url(#pLake)"/>
+              <path d="M0 192Q160 177 300 187T600 188" fill="none" stroke="#aaa8ee" stroke-opacity=".45" stroke-width="2"/>
+              <path d="M0 225Q140 204 262 216T600 211" fill="none" stroke="#a27ccf" stroke-opacity=".2" stroke-width="1.5"/>
+              <circle cx="465" cy="43" r="1.8" fill="#fff" opacity=".85"/>
+              <circle cx="158" cy="22" r="1.2" fill="#fff" opacity=".8"/>
+              <circle cx="318" cy="15" r="1.4" fill="#c9c7ff" opacity=".8"/>
+            </svg>
           </div>
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="hero-services shell" aria-label="Leistungen im Überblick">
+    <a class="hero-service" href="#services">
+      <span class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="1.5"/><path d="M8 21h8M12 17v4"/></svg></span>
+      <strong data-t="heroServices.design.title">Webdesign &amp; Webentwicklung</strong>
+      <span data-t="heroServices.design.copy">Moderne Websites mit klarem Design</span>
+    </a>
+    <a class="hero-service" href="#services">
+      <span class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 16 11-11 4 4L8 20l-5 1 1-5Z"/><path d="m13 7 4 4M3 21h18"/></svg></span>
+      <strong data-t="heroServices.relaunch.title">Bestehende Websites überarbeiten</strong>
+      <span data-t="heroServices.relaunch.copy">Optimieren, modernisieren und erweitern</span>
+    </a>
+    <a class="hero-service" href="#services">
+      <span class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="7" rx="1.5"/><rect x="3" y="13" width="18" height="7" rx="1.5"/><path d="M7 7.5h.01M7 16.5h.01M15 7.5h3M15 16.5h3"/></svg></span>
+      <strong data-t="heroServices.hosting.title">Domain, Hosting und SSL</strong>
+      <span data-t="heroServices.hosting.copy">Zuverlässige technische Einrichtung</span>
+    </a>
+    <a class="hero-service" href="#services">
+      <span class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20v-5M10 20V9M16 20V5M22 20V2"/></svg></span>
+      <strong data-t="heroServices.seo.title">Technisches SEO</strong>
+      <span data-t="heroServices.seo.copy">Bessere Sichtbarkeit in der Region</span>
+    </a>
+    <a class="hero-service" href="#services">
+      <span class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 2-.6 2.1-2.1.9-2-.9-2.3 4 1.5 1.6-.3 2.3-1.9 1.1 2.3 4 2.1-.7 1.9 1.5.1 2.1h4.6l.6-2.1 2-.9 2.1.9 2.3-4-1.6-1.6.3-2.3 2-1.1-2.3-4-2.1.7-1.9-1.5L14.4 2H10Z"/><circle cx="12" cy="11.5" r="3"/></svg></span>
+      <strong data-t="heroServices.support.title">Wartung und Support</strong>
+      <span data-t="heroServices.support.copy">Langfristige Betreuung nach dem Launch</span>
+    </a>
   </div>
 </section>
 
@@ -136,7 +195,7 @@
   </div>
 </section>
 
-<section class="dark-surface section">
+<section class="dark-surface section" id="approach">
   <div class="shell">
     <div class="section-head reveal">
       <p class="eyebrow" data-t="system.label">Wie wir Websites aufbauen</p>

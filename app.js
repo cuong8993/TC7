@@ -77,6 +77,48 @@ en:{
 }
 };
 
+
+// Cinematic hero additions. Existing translations remain authoritative.
+Object.assign(COPY.de,{
+"nav.work":"Projekte","nav.about":"Über uns",
+"heroServices.design.title":"Webdesign & Webentwicklung",
+"heroServices.design.copy":"Moderne Websites mit klarem Design",
+"heroServices.relaunch.title":"Bestehende Websites überarbeiten",
+"heroServices.relaunch.copy":"Optimieren, modernisieren und erweitern",
+"heroServices.hosting.title":"Domain, Hosting und SSL",
+"heroServices.hosting.copy":"Zuverlässige technische Einrichtung",
+"heroServices.seo.title":"Technisches SEO",
+"heroServices.seo.copy":"Bessere Sichtbarkeit in der Region",
+"heroServices.support.title":"Wartung und Support",
+"heroServices.support.copy":"Langfristige Betreuung nach dem Launch"
+});
+Object.assign(COPY.vi,{
+"nav.work":"Dự án","nav.about":"Về chúng tôi",
+"heroServices.design.title":"Thiết kế & phát triển website",
+"heroServices.design.copy":"Website hiện đại, giao diện chỉn chu",
+"heroServices.relaunch.title":"Nâng cấp website hiện có",
+"heroServices.relaunch.copy":"Tối ưu, làm mới và mở rộng",
+"heroServices.hosting.title":"Tên miền, hosting & SSL",
+"heroServices.hosting.copy":"Thiết lập hạ tầng kỹ thuật ổn định",
+"heroServices.seo.title":"SEO kỹ thuật",
+"heroServices.seo.copy":"Tăng khả năng hiển thị tại địa phương",
+"heroServices.support.title":"Bảo trì & hỗ trợ",
+"heroServices.support.copy":"Đồng hành lâu dài sau khi ra mắt"
+});
+Object.assign(COPY.en,{
+"nav.work":"Projects","nav.about":"About us",
+"heroServices.design.title":"Web design & development",
+"heroServices.design.copy":"Modern websites with clear design",
+"heroServices.relaunch.title":"Website redesign",
+"heroServices.relaunch.copy":"Improve, modernize and extend",
+"heroServices.hosting.title":"Domain, hosting & SSL",
+"heroServices.hosting.copy":"Dependable technical setup",
+"heroServices.seo.title":"Technical SEO",
+"heroServices.seo.copy":"Stronger visibility in local search",
+"heroServices.support.title":"Maintenance & support",
+"heroServices.support.copy":"Ongoing care after launch"
+});
+
 const LANG_META={de:{flag:"/assets/flags/de.svg",code:"DE"},vi:{flag:"/assets/flags/vi.svg",code:"VI"},en:{flag:"/assets/flags/en.svg",code:"EN"}};
 function setLanguage(lang,updateUrl=true){
 if(!COPY[lang])lang="de";
@@ -121,3 +163,18 @@ if(canvas&&ctx){resizeLight();drawLights();addEventListener("resize",()=>{cancel
 
 document.querySelector(".year").textContent=new Date().getFullYear();
 document.querySelector(".project-form").addEventListener("submit",function(e){e.preventDefault();if(this.elements.website.value)return;if(!this.checkValidity()){this.reportValidity();return}const data=new FormData(this);const subject=encodeURIComponent("TC7 Projektanfrage | "+data.get("name"));const body=encodeURIComponent("Name / Unternehmen: "+data.get("name")+"\nE-Mail: "+data.get("email")+"\n\nProjekt:\n"+data.get("project"));document.querySelector(".status").textContent=COPY[document.documentElement.lang]["form.status"];location.href="mailto:cuong8993@gmail.com?subject="+subject+"&body="+body});
+
+
+// The sun control reduces visual lighting, it does not change the dark brand theme.
+const ambientToggle=document.querySelector(".ambient-toggle");
+if(ambientToggle){
+  const muted=localStorage.getItem("tc7AmbientMuted")==="1";
+  document.body.classList.toggle("ambient-muted",muted);
+  ambientToggle.setAttribute("aria-pressed",String(muted));
+  ambientToggle.addEventListener("click",()=>{
+    const next=!document.body.classList.contains("ambient-muted");
+    document.body.classList.toggle("ambient-muted",next);
+    ambientToggle.setAttribute("aria-pressed",String(next));
+    localStorage.setItem("tc7AmbientMuted",next?"1":"0");
+  });
+}
