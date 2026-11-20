@@ -6,9 +6,11 @@ Premium multilingual website for **TC7 Studio**, an independent web studio for d
 
 The homepage was rebuilt as a product-led studio experience inspired by the clarity and pacing of high-end SaaS sites, while remaining an original TC7 implementation.
 
-- large claim-first hero with a live development showcase
+- screenshot-inspired split hero with functional HTML/CSS code editor and website preview
+- local SVG cosmic horizon, stars and orbital accents, with no external image request
+- five service shortcuts visible in the first viewport
 - interactive four-layer web system: structure, interface, performance and search
-- premium alternating dark / warm-light visual system
+- consistent dark cinematic visual system with cosmic blue/indigo/violet lighting
 - strong typography, asymmetric layouts and restrained micro-animation
 - service architecture instead of generic agency cards
 - compact Kimi.Studio reference rather than a large case study
@@ -36,7 +38,9 @@ Current contact:
 ## Architecture
 
 - `index.html` — semantic page structure and SEO metadata
-- `styles.css` — complete responsive design system
+- `styles.css` — original responsive design system
+- `cinematic.css` — cinematic hero and header overrides, including tablet/mobile
+- `assets/brand/cosmic-horizon.svg` — optimized vector cosmic backdrop
 - `app.js` — language switching, mobile navigation, interactive system tabs, scroll reveals and contact form
 - `impressum.html` / `datenschutz.html` — legal pages
 - `wrangler.jsonc` — Cloudflare Workers Static Assets deployment
@@ -51,4 +55,4 @@ Current contact:
 
 ## Deployment
 
-Cloudflare Workers Static Assets deploys the repository root directly. No build step is required.
+Cloudflare Workers Static Assets deploys the repository root directly. No build step is required. A GitHub commit or merged PR is not proof of a live deployment; run `npx wrangler deploy` or verify the configured deployment pipeline separately.
