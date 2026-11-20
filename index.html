@@ -22,6 +22,7 @@
 <link rel="alternate" hreflang="en" href="?lang=en">
 <link rel="alternate" hreflang="x-default" href="?lang=de">
 <link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/cosmic-2026.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"ProfessionalService","name":"TC7 Studio","email":"mailto:cuong8993@gmail.com","telephone":"+49 173 9117103","areaServed":{"@type":"Country","name":"Germany"},"availableLanguage":["de","vi","en"],"serviceType":["Webdesign","Website Entwicklung","Website Relaunch","Domain und DNS Setup","SEO","Website Support"]}
 </script>
@@ -43,6 +44,7 @@
       <a href="#contact" data-t="nav.contact">Kontakt</a>
     </nav>
     <div class="header-tools">
+      <a class="header-cta" href="#contact"><span data-t="hero.cta">Projekt besprechen</span><span aria-hidden="true">↗</span></a>
       <div class="language-select">
         <button class="language-trigger" type="button" aria-haspopup="listbox" aria-expanded="false" aria-label="Sprache wählen">
           <img class="language-current-flag" src="/assets/flags/de.svg" alt="" aria-hidden="true">
@@ -71,6 +73,9 @@
 <section class="hero" id="top">
   <canvas class="hero-light-canvas" id="heroLightCanvas" aria-hidden="true"></canvas>
   <div class="hero-grid"></div>
+  <div class="cosmic-stars" aria-hidden="true"></div>
+  <div class="cosmic-orbit" aria-hidden="true"></div>
+  <div class="cosmic-horizon" aria-hidden="true"></div>
   <div class="hero-lighting" aria-hidden="true">
     <i class="hero-orb orb-a"></i>
     <i class="hero-orb orb-b"></i>
@@ -78,6 +83,7 @@
     <i class="hero-beam"></i>
   </div>
   <div class="hero-content shell">
+    <div class="hero-copy">
     <div class="hero-kicker"><i class="status-dot"></i><span data-t="hero.kicker">Webdesign · Entwicklung · SEO</span></div>
     <h1>
       <span data-t="hero.a">Websites, die überzeugen.</span>
@@ -91,35 +97,43 @@
       </div>
     </div>
 
+    </div>
     <div class="hero-stage reveal" aria-label="TC7 Entwicklungs Showcase">
       <div class="stage-shine"></div>
       <div class="stage-bar">
         <div class="stage-dots"><i></i><i></i><i></i></div>
-        <div class="stage-url">tc7.studio / live build</div>
-        <div class="stage-state">SYSTEM READY</div>
+        <div class="stage-url">TC7 Studio / index.html</div>
+        <div class="stage-state">● PREVIEW</div>
       </div>
       <div class="stage-body">
         <div class="code-pane">
-          <div class="code-head"><span>website.system</span><span>LIVE</span></div>
+          <div class="code-head"><span>▾ &nbsp; TC7 / index.html</span><span>● HTML</span></div>
           <div class="code-lines" aria-hidden="true">
-            <div class="code-line"><b>01</b><span><i class="c-blue">strategy</i> = clarify(goal, audience)</span></div>
-            <div class="code-line"><b>02</b><span><i class="c-green">structure</i> = semantic(content)</span></div>
-            <div class="code-line"><b>03</b><span><i class="c-warm">interface</i> = design(hierarchy, motion)</span></div>
-            <div class="code-line"><b>04</b><span><i class="c-blue">layout</i> = responsive(viewport)</span></div>
-            <div class="code-line"><b>05</b><span><i class="c-green">performance</i> = minimize(payload)</span></div>
-            <div class="code-line"><b>06</b><span><i class="c-warm">search</i> = structure(metadata, schema)</span></div>
-            <div class="code-line"><b>07</b><span class="c-white">deploy({ quality: "production" })</span></div>
-          </div>
+            <div class="code-line"><b>01</b><span><i class="c-blue">&lt;!DOCTYPE html&gt;</i></span></div>
+            <div class="code-line"><b>02</b><span>&lt;html lang=<i class="c-warm">"de"</i>&gt;</span></div>
+            <div class="code-line"><b>03</b><span>&nbsp; &lt;head&gt;</span></div>
+            <div class="code-line"><b>04</b><span>&nbsp; &nbsp; &lt;meta charset=<i class="c-warm">"UTF-8"</i>&gt;</span></div>
+            <div class="code-line"><b>05</b><span>&nbsp; &nbsp; &lt;meta name=<i class="c-warm">"viewport"</i>&gt;</span></div>
+            <div class="code-line"><b>06</b><span>&nbsp; &nbsp; &lt;title&gt;<i class="c-green">TC7 Studio</i>&lt;/title&gt;</span></div>
+            <div class="code-line"><b>07</b><span>&nbsp; &lt;/head&gt;</span></div>
+            <div class="code-line"><b>08</b><span>&nbsp; &lt;body&gt;</span></div>
+            <div class="code-line"><b>09</b><span>&nbsp; &nbsp; &lt;main class=<i class="c-warm">"hero"</i>&gt;</span></div>
+            <div class="code-line"><b>10</b><span>&nbsp; &nbsp; &nbsp; &lt;h1&gt;<i class="c-green">Webdesign.</i>&lt;/h1&gt;</span></div>
+            <div class="code-line"><b>11</b><span>&nbsp; &nbsp; &lt;/main&gt;</span></div>
+            <div class="code-line"><b>12</b><span>&nbsp; &lt;/body&gt;</span></div>
+            <div class="code-line"><b>13</b><span>&lt;/html&gt;</span></div>
+          </div>>
         </div>
         <div class="preview-pane">
           <div class="preview-aurora"></div>
           <div class="preview-window">
-            <div class="preview-nav"><strong>ATELIER/01</strong><span>WORK · STORY · CONTACT</span></div>
+            <div class="preview-nav"><strong><span class="preview-brand-accent">TC7</span> STUDIO</strong><span>☰</span></div>
             <div class="preview-hero">
-              <small>DIGITAL PRESENCE / BUILT WITH INTENT</small>
-              <h2>Clarity.<br>Craft.<br><em>Impact.</em></h2>
+              <small>WEB DESIGN / DEVELOPMENT</small>
+              <h2>Websites, die<br>überzeugen.<br><em>Technik, die mitwächst.</em></h2>
+              <div class="preview-cta">Projekt besprechen &nbsp; ↗</div>
             </div>
-            <div class="preview-foot"><span>RESPONSIVE</span><span>SEMANTIC</span><span>FAST</span><span>SEO READY</span></div>
+            <div class="preview-landscape" aria-hidden="true"></div><div class="preview-foot"><span>WEB DESIGN</span><span>DEVELOPMENT</span><span>SEO</span></div>
           </div>
         </div>
       </div>
@@ -127,12 +141,13 @@
   </div>
 </section>
 
-<section class="proof-strip">
+<section class="proof-strip" aria-label="Leistungen im Überblick">
   <div class="proof-grid shell">
-    <div class="proof-item"><small>01</small><strong data-t="proof.1">Responsive gedacht</strong></div>
-    <div class="proof-item"><small>02</small><strong data-t="proof.2">Performance im Fokus</strong></div>
-    <div class="proof-item"><small>03</small><strong data-t="proof.3">SEO technisch vorbereitet</strong></div>
-    <div class="proof-item"><small>04</small><strong data-t="proof.4">Sauber bedienbar</strong></div>
+    <a class="proof-item" href="#services"><span class="proof-icon" aria-hidden="true">▣</span><strong data-t="cap1.title">Webdesign &amp; Entwicklung</strong><small data-t="quick.web">Moderne Websites mit klarem Design</small></a>
+    <a class="proof-item" href="#services"><span class="proof-icon" aria-hidden="true">✎</span><strong data-t="quick.rework">Bestehende Websites überarbeiten</strong><small data-t="quick.rework.body">Optimieren, modernisieren und erweitern</small></a>
+    <a class="proof-item" href="#services"><span class="proof-icon" aria-hidden="true">▤</span><strong data-t="cap2.title">Domain &amp; Infrastruktur</strong><small data-t="quick.host">Zuverlässige technische Einrichtung</small></a>
+    <a class="proof-item" href="#services"><span class="proof-icon" aria-hidden="true">▥</span><strong data-t="cap3.title">SEO &amp; Sichtbarkeit</strong><small data-t="quick.seo">Bessere technische Sichtbarkeit</small></a>
+    <a class="proof-item" href="#contact"><span class="proof-icon" aria-hidden="true">⚙</span><strong data-t="quick.support">Wartung und Support</strong><small data-t="quick.support.body">Langfristige Betreuung nach dem Launch</small></a>
   </div>
 </section>
 
