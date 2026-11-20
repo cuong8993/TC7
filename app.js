@@ -2,6 +2,7 @@ const COPY={
 de:{
 "nav.work":"Arbeit","nav.services":"Leistungen","nav.process":"Ablauf","nav.contact":"Kontakt",
 "hero.kicker":"Webdesign · Entwicklung · SEO","hero.a":"Websites, die überzeugen.","hero.b":"Technik, die mitwächst.","hero.body":"Wir entwickeln hochwertige Websites für Unternehmen, Restaurants und Studios. Klar im Design, sauber im Code und zuverlässig im Betrieb.","hero.cta":"Projekt besprechen","hero.work":"Arbeiten ansehen",
+"quick.web":"Moderne Websites mit klarem Design","quick.rework":"Bestehende Websites überarbeiten","quick.rework.body":"Optimieren, modernisieren und erweitern","quick.host":"Zuverlässige technische Einrichtung","quick.seo":"Bessere technische Sichtbarkeit","quick.support":"Wartung und Support","quick.support.body":"Langfristige Betreuung nach dem Launch",
 "proof.1":"Responsive gedacht","proof.2":"Performance im Fokus","proof.3":"SEO technisch vorbereitet","proof.4":"Sauber bedienbar",
 "system.label":"Wie wir Websites aufbauen","system.title":"Design, Inhalt und Technik müssen zusammen funktionieren.","system.copy":"Eine gute Website führt Besucher, vermittelt Qualität und bleibt technisch zuverlässig. Deshalb denken wir Struktur, Interface, Performance und Auffindbarkeit von Anfang an zusammen.",
 "tab.1":"Struktur","tab.2":"Interface","tab.3":"Performance","tab.4":"Search",
@@ -21,6 +22,7 @@ vi:{
 "hero.a":"Website tạo ấn tượng.","hero.b":"Nền tảng linh hoạt, dễ mở rộng.",
 "hero.body":"Chúng tôi thiết kế và phát triển website cho doanh nghiệp, nhà hàng và studio. Chỉn chu về hình ảnh, vững về kỹ thuật và đồng hành cả sau khi website đi vào hoạt động.",
 "hero.cta":"Trao đổi về dự án","hero.work":"Xem dự án",
+"quick.web":"Website hiện đại, thiết kế rõ ràng","quick.rework":"Nâng cấp website hiện có","quick.rework.body":"Tối ưu, làm mới và mở rộng","quick.host":"Thiết lập hạ tầng kỹ thuật ổn định","quick.seo":"Cải thiện khả năng hiển thị trên tìm kiếm","quick.support":"Bảo trì và hỗ trợ","quick.support.body":"Đồng hành sau khi website ra mắt",
 "proof.1":"Hiển thị tốt trên mọi thiết bị","proof.2":"Tối ưu tốc độ","proof.3":"Nền tảng SEO vững","proof.4":"Trải nghiệm dễ sử dụng",
 "system.label":"Cách chúng tôi triển khai website",
 "system.title":"Thiết kế, nội dung và kỹ thuật phải đi cùng nhau.",
@@ -62,6 +64,7 @@ vi:{
 en:{
 "nav.work":"Work","nav.services":"Services","nav.process":"Process","nav.contact":"Contact",
 "hero.kicker":"Web design · development · SEO","hero.a":"Websites that convince.","hero.b":"Technology that grows with you.","hero.body":"We build refined websites for businesses, restaurants and studios. Clear design, clean development and reliable support after launch.","hero.cta":"Discuss a project","hero.work":"View work",
+"quick.web":"Modern websites with clear design","quick.rework":"Improve existing websites","quick.rework.body":"Optimize, modernize and extend","quick.host":"Reliable technical setup","quick.seo":"Improve your search visibility","quick.support":"Maintenance and support","quick.support.body":"Long-term support after launch",
 "proof.1":"Responsive from the start","proof.2":"Performance focused","proof.3":"Technically ready for SEO","proof.4":"Easy to use",
 "system.label":"How we build websites","system.title":"Design, content and technology need to work together.","system.copy":"A strong website guides people, communicates quality and stays technically reliable. We treat structure, interface, performance and discoverability as one system from the beginning.",
 "tab.1":"Structure","tab.2":"Interface","tab.3":"Performance","tab.4":"Search",
