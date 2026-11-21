@@ -1,5 +1,6 @@
 const COPY={
 de:{
+"showcase.text":"Digitale Erlebnisse, in denen Design, Technik und Bewegung zusammenfinden.","showcase.start":"Projekt starten →","showcase.work":"Arbeiten ansehen ↗",
 "nav.about":"Über uns",
 "spot.1.title":"Webdesign &amp;<br>Webentwicklung",
 "spot.1.body":"Moderne Websites<br>mit klarem Design",
@@ -27,6 +28,7 @@ de:{
 "contact.label":"Projekt starten","contact.a":"Eine Website, die","contact.b":"zu Ihrem Unternehmen passt.","contact.body":"Senden Sie uns ein paar Sätze zu Ihrem Projekt. Für den Anfang reichen Ziel, aktueller Stand und was besser werden soll.","form.name":"Name / Unternehmen","form.email":"E-Mail","form.project":"Projekt","form.privacy":"Ich habe die <a href=\"/datenschutz.html\" target=\"_blank\">Datenschutzerklärung</a> gelesen.","form.send":"Anfrage vorbereiten","form.status":"E-Mail-Anwendung wird geöffnet …"
 },
 vi:{
+"showcase.text":"Trải nghiệm số kết hợp thiết kế, công nghệ và chuyển động.","showcase.start":"Bắt đầu dự án →","showcase.work":"Xem dự án ↗",
 "nav.about":"Về chúng tôi",
 "spot.1.title":"Thiết kế và<br>phát triển website",
 "spot.1.body":"Website hiện đại<br>với thiết kế tinh gọn",
@@ -82,6 +84,7 @@ vi:{
 "form.send":"Soạn email","form.status":"Đang mở ứng dụng email …"
 },
 en:{
+"showcase.text":"Digital experiences where design, technology and motion come together.","showcase.start":"Start a project →","showcase.work":"View work ↗",
 "nav.about":"About us",
 "spot.1.title":"Web design &amp;<br>development",
 "spot.1.body":"Modern websites<br>with clear design",
