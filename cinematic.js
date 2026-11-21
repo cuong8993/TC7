@@ -4,6 +4,11 @@
   const hero = document.querySelector('.cinematic-hero');
   if (!toggle || !hero) return;
 
+  // Show the ambient cursor light only after its first real pointer position.
+  if (matchMedia('(hover: hover) and (pointer: fine)').matches) {
+    addEventListener('pointermove', () => document.body.classList.add('has-pointer'), {passive:true, once:true});
+  }
+
   toggle.addEventListener('click', () => {
     const off = document.body.classList.toggle('ambient-off');
     toggle.setAttribute('aria-pressed', String(off));

@@ -1,0 +1,132 @@
+/* TC7 Studio / continuous cosmic environment and approved photographic tablet.
+   This layer follows cinematic.css and showcase-upgrade.css, without breaking the
+   existing portfolio, translations or functional page sections. */
+
+/* One fixed scene behind every section. No image restart at section boundaries. */
+html{background:#020817!important}
+body:has(.cinematic-hero){position:relative;isolation:isolate;background:transparent!important}
+body:has(.cinematic-hero)::before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
+  background:linear-gradient(180deg,rgba(1,5,17,.43),rgba(1,6,19,.46) 35%,rgba(1,5,16,.64) 76%,rgba(1,5,14,.76)),
+  url('/assets/hero/cosmic-scene.avif') 54% 47%/cover no-repeat;
+}
+/* A very slow, atmospheric illumination; never spin the photographic planet. */
+body:has(.cinematic-hero)::after{content:"";position:fixed;inset:-20% -8%;z-index:-1;pointer-events:none;
+  background:radial-gradient(ellipse at 79% 27%,rgba(41,114,255,.16),transparent 41%),
+             radial-gradient(ellipse at 40% 70%,rgba(94,50,210,.08),transparent 47%);
+  opacity:.68;animation:tc7Atmosphere 32s ease-in-out infinite alternate;
+}
+@keyframes tc7Atmosphere{from{transform:translate3d(-1.8%,1.5%,0) scale(1)}to{transform:translate3d(1.7%,-1.7%,0) scale(1.045)}}
+body:has(.cinematic-hero) .cinematic-hero{background:transparent!important;overflow:hidden}
+body:has(.cinematic-hero) .cinematic-backdrop{display:none!important}
+body:has(.cinematic-hero) .cinematic-vignette{
+  background:linear-gradient(180deg,rgba(0,4,14,.08),rgba(0,4,14,.13) 60%,rgba(0,4,14,.38) 100%)!important;
+}
+body:has(.cinematic-hero) .dark-surface,
+body:has(.cinematic-hero) .dark-surface:nth-of-type(even),
+body:has(.cinematic-hero) .work-section,
+body:has(.cinematic-hero) .contact,
+body:has(.cinematic-hero) .proof-strip,
+body:has(.cinematic-hero) .site-footer{
+  background:rgba(2,7,19,.62)!important;
+  background-image:none!important;
+  color:#f2f6ff!important;
+}
+body:has(.cinematic-hero) .site-footer{background:rgba(2,6,17,.77)!important}
+body:has(.cinematic-hero) .proof-strip{border-color:rgba(145,190,255,.14)!important}
+
+/* Exact perspective comes from the reference-derived illustration itself.
+   Never reapply perspective transforms to the photograph. */
+body:has(.cinematic-hero) .cinematic-layout{
+  display:grid;grid-template-columns:minmax(0,1.24fr) minmax(0,.90fr);
+  gap:clamp(28px,3.3vw,58px);align-items:center;min-height:465px;
+}
+body:has(.cinematic-hero) .cinematic-copy{
+  min-width:0;max-width:100%;padding:0;z-index:4;
+}
+body:has(.cinematic-hero) .cinematic-hero h1{
+  font-size:clamp(38px,3.68vw,62px)!important;line-height:1.11!important;
+  letter-spacing:-.055em!important;
+}
+body:has(.cinematic-hero) .cinematic-intro{max-width:610px}
+body:has(.cinematic-hero) .cinematic-photo{
+  position:relative;display:block;width:100%;max-width:610px;min-width:0;
+  min-height:0;padding:0!important;margin:0!important;justify-self:end;
+  filter:none!important;perspective:none!important;isolation:isolate;
+}
+body:has(.cinematic-hero) .cinematic-photo .showcase-photograph{
+  position:relative;z-index:1;display:block;width:100%;line-height:0;
+  transform:translate3d(0,0,0);transition:transform .7s cubic-bezier(.2,.75,.25,1);
+  filter:drop-shadow(0 31px 35px rgba(0,4,20,.72));
+}
+body:has(.cinematic-hero) .cinematic-photo .showcase-photograph img{
+  display:block;width:100%;height:auto;object-fit:contain;
+  -webkit-user-drag:none;user-select:none;
+}
+body:has(.cinematic-hero) .cinematic-photo .showcase-atmosphere{
+  position:absolute;z-index:0;inset:-12%;pointer-events:none;border-radius:50%;
+  background:radial-gradient(ellipse at 63% 47%,rgba(29,116,255,.23),rgba(108,48,230,.13) 38%,transparent 69%);
+  filter:blur(27px);opacity:.65;animation:tc7TabletLight 19s ease-in-out infinite alternate;
+}
+@keyframes tc7TabletLight{from{transform:translate3d(-3%,2%,0) scale(.97)}to{transform:translate3d(3%,-3%,0) scale(1.04)}}
+@media(hover:hover) and (pointer:fine){
+  body:has(.cinematic-hero) .cinematic-photo:hover .showcase-photograph{transform:translate3d(0,-5px,0)}
+}
+/* DE keeps the strongest type size. EN and VI are fitted independently to prevent
+   the long second line from entering the visual column. */
+html[lang="en"] body:has(.cinematic-hero) .cinematic-hero h1{font-size:clamp(32px,2.94vw,49px)!important;line-height:1.15!important}
+html[lang="vi"] body:has(.cinematic-hero) .cinematic-hero h1{font-size:clamp(30px,2.76vw,47px)!important;line-height:1.25!important}
+
+/* Soft, subtle pointer light stays in view across all sections and header.
+   Existing app.js updates its fixed position; JS marks the first pointer move. */
+@media(hover:hover) and (pointer:fine){
+  body:has(.cinematic-hero) .cursor-glow{
+    z-index:110!important;width:420px;height:420px;
+    background:radial-gradient(circle,rgba(88,145,255,.15),rgba(80,87,205,.078) 34%,rgba(107,53,217,.025) 54%,transparent 72%);
+    filter:blur(13px);mix-blend-mode:screen;opacity:0!important;
+    transition:opacity .32s ease;
+  }
+  body.has-pointer:has(.cinematic-hero) .cursor-glow{opacity:.7!important}
+}
+
+/* Give the copy plenty of room at intermediate desktop widths. */
+@media(min-width:1051px) and (max-width:1370px){
+  body:has(.cinematic-hero) .cinematic-layout{grid-template-columns:minmax(0,1.22fr) minmax(0,.88fr);gap:24px}
+  body:has(.cinematic-hero) .cinematic-hero h1{font-size:clamp(36px,3.56vw,49px)!important}
+  html[lang="en"] body:has(.cinematic-hero) .cinematic-hero h1{font-size:clamp(30px,2.92vw,40px)!important}
+  html[lang="vi"] body:has(.cinematic-hero) .cinematic-hero h1{font-size:clamp(29px,2.76vw,38px)!important}
+}
+@media(max-width:1050px){
+  body:has(.cinematic-hero) .cinematic-layout{grid-template-columns:minmax(0,1fr);gap:clamp(26px,4vw,44px);min-height:0}
+  body:has(.cinematic-hero) .cinematic-copy{max-width:100%}
+  body:has(.cinematic-hero) .cinematic-photo{max-width:660px;justify-self:center}
+  body:has(.cinematic-hero) .cinematic-hero h1{font-size:clamp(39px,5.2vw,57px)!important}
+  html[lang="en"] body:has(.cinematic-hero) .cinematic-hero h1{font-size:clamp(34px,4.45vw,48px)!important}
+  html[lang="vi"] body:has(.cinematic-hero) .cinematic-hero h1{font-size:clamp(32px,4.2vw,45px)!important}
+}
+@media(max-width:700px){
+  body:has(.cinematic-hero)::before{background-position:55% center}
+  body:has(.cinematic-hero) .cinematic-hero{padding-top:118px!important}
+  body:has(.cinematic-hero) .cinematic-layout{gap:26px}
+  body:has(.cinematic-hero) .cinematic-copy{width:100%}
+  body:has(.cinematic-hero) .cinematic-hero h1{font-size:clamp(26px,6.6vw,43px)!important;line-height:1.17!important}
+  body:has(.cinematic-hero) .cinematic-hero h1 span{white-space:normal!important;overflow-wrap:normal}
+  html[lang="en"] body:has(.cinematic-hero) .cinematic-hero h1{font-size:clamp(23px,5.7vw,37px)!important}
+  html[lang="vi"] body:has(.cinematic-hero) .cinematic-hero h1{font-size:clamp(22px,5.45vw,36px)!important;line-height:1.25!important}
+  body:has(.cinematic-hero) .cinematic-photo{max-width:570px;padding:0 2px!important}
+  body:has(.cinematic-hero) .cinematic-photo .showcase-photograph{filter:drop-shadow(0 18px 24px rgba(0,2,15,.67))}
+}
+@media(max-width:420px){
+  body:has(.cinematic-hero) .cinematic-hero h1{font-size:clamp(23px,6.3vw,28px)!important}
+  html[lang="en"] body:has(.cinematic-hero) .cinematic-hero h1{font-size:clamp(22px,5.6vw,26px)!important}
+  html[lang="vi"] body:has(.cinematic-hero) .cinematic-hero h1{font-size:clamp(21px,5.4vw,25px)!important}
+}
+@media(pointer:coarse){body:has(.cinematic-hero) .cursor-glow{display:none!important}}
+@media(prefers-reduced-motion:reduce){
+  body:has(.cinematic-hero)::after,
+  body:has(.cinematic-hero) .showcase-atmosphere{animation:none!important}
+  body:has(.cinematic-hero) .cinematic-photo .showcase-photograph{transform:none!important;transition:none!important}
+  body:has(.cinematic-hero) .cursor-glow{display:none!important}
+}
+body.ambient-off:has(.cinematic-hero)::after{animation:none;opacity:.18}
+body.ambient-off:has(.cinematic-hero) .showcase-atmosphere{animation:none;opacity:.16}
+body.ambient-off:has(.cinematic-hero) .cursor-glow{display:none!important}
